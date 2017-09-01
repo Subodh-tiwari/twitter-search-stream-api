@@ -23,6 +23,7 @@ server.register(plugins as any, (err) => {
     }
     server.start( () => {
         console.log(`Server started at ${server.info.uri}`);
+        // start twitter filter streaming
         twitterStream();
     });
 });

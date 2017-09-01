@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
@@ -15,10 +15,10 @@ let db = null;
 if (connection.isConnected == false) {
     MongoClient.connect(url, (err, conn) => {
         if (err) {
-            throw err
+            throw err;
         }
-        connection.db = conn
-        connection.isConnected = true
+        connection.db = conn;
+        connection.isConnected = true;
     });
 
 };

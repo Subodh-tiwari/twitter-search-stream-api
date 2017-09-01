@@ -1,7 +1,7 @@
 {
   "name": "twitter-search-stream-api",
   "version": "1.0.0",
-  "description": "twitter stream api for filter tweets and store them in mongo db",
+  "description": "twitter stream api for filter tweets and store them in mongo db and fetch no of tweets per user and no of retweets of the tweet",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",

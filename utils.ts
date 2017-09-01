@@ -10,7 +10,7 @@ import { insertDocument } from './controller';
 
 export const twitterStream = () => {
 
-    const stream = twitterClient.stream('statuses/filter', { track: 'blockchain' });
+    const stream = twitterClient.stream('statuses/filter', { track: 'blockchain,bitcoin' });
     stream.on('data', (event) => {
         if(event) {
             insertDocument(event);

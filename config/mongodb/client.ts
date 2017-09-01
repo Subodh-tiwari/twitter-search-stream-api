@@ -10,8 +10,6 @@ let connection = {
     db: null
 };
 
-let db = null;
-
 if (connection.isConnected == false) {
     MongoClient.connect(url, (err, conn) => {
         if (err) {

@@ -15,7 +15,7 @@ const routes: RouteConfiguration[] = [
     {
         method: "GET",
         path: "/getsortedretweets",
-        handler: handler.getSortedByRetweets
+        handler: handler.getSortedRetweets
     }
 ];
 

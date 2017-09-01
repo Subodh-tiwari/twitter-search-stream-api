@@ -22,7 +22,7 @@ const handler = {
     },
     getSortedRetweets(request: Request, reply: ReplyNoContinue) {
         let arr = [];
-        const cursor = db.db.collection('tweets').aggregate([{ $sort: { retweet_count: 1 } }, { $project: { "user.screen_name": 1, "text": 1, "retweet_count": 1 } }]);
+        const cursor = db.db.collection('tweets').aggregate([{ $sort: { retweet_count: -1 } }, { $project: { "user.screen_name": 1, "text": 1, "retweet_count": 1 } }]);
         cursor.each((err, doc) => {
             if (doc != null) {
                 arr.push(doc);
